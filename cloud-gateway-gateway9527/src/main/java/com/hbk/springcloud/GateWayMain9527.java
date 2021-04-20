@@ -2,19 +2,17 @@ package com.hbk.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 /**
- * @author 胡冰宽
- * @date 2021/3/5
- **/
-// Eureka的客户端
-@EnableEurekaClient
+ * @Description TODO
+ * @Author 麻瓜胡
+ * @Date 2021/4/20
+ */
 @SpringBootApplication
-@EnableDiscoveryClient
-public class PaymentMain8001 {
+@EnableEurekaClient
+public class GateWayMain9527 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8001.class, args);
+        SpringApplication.run(GateWayMain9527.class, args);
     }
 }
