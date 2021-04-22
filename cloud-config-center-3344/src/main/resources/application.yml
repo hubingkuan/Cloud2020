@@ -8,30 +8,18 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:zzyybs/springcloud-config.git #GitHub上面的git仓库名字
-          ####搜索目录
-          search-paths:
-            - springcloud-config
+          uri: https://github.com/hubingkuan/springcloud-config.git #GitHub上面的git仓库名字
+          force-pull: true
+          username: hubingkuan
+          password: hbk0610yblk
+          skip-ssl-validation: true
       ####读取分支
-      label: master
-#rabbitmq相关配置
-rabbitmq:
-  host: localhost
-  port: 5672
-  username: guest
-  password: guest
+      #label: master
 
 #服务注册到eureka地址
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:7001/eureka
-
-##rabbitmq相关配置,暴露bus刷新配置的端点
-management:
-  endpoints: #暴露bus刷新配置的端点
-    web:
-      exposure:
-        include: 'bus-refresh'
 
 
